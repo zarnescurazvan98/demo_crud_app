@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		.then((response) => response.json())
 		.then((suppliers) => suppliers.forEach(putItOnTheDOM));
 
+	// Function that renders the table elements on the DOM //
+
 	function putItOnTheDOM(supplier) {
 		const supplierLi = document.createElement('tr');
 		supplierLi.dataset.id = supplier.id;
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 								<td scope="row">${supplier.zip_code}</td>`
 		suppliers.appendChild(supplierLi);
 		
-		//Delete Button//
+		// Delete Button //
 
 		const buttond = document.createElement('button');
 		buttond.dataset.id = supplier.id;
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		buttond.setAttribute("class", "btn btn-dark");
 		buttond.addEventListener('click', () => deleteSupplier(supplier));
 		
-		//Update Button//
+		// Update Button //
 
 		const buttonu = document.createElement('button');
 		buttonu.dataset.id = supplier.id;
@@ -38,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		supplierLi.appendChild(buttonu);
 		buttonu.addEventListener('click', () => editSupplier(supplier));
 	}
+	
+	// Function that gets the input from form //
 
 	function gatherFormData() {
 		return {
