@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Supplier CRUD</title>
+		<link rel="stylesheet" href="style.css">
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,8 +14,11 @@
 	</head>
 
 	<body>
-		<!-- New supplier add form -->
 		<div class="container">
+			<button class="btn btn-dark" onclick="myFunction()">Create new supplier</button>
+		</div>
+		<!-- New supplier add form -->
+		<div id="show_container" class="container" style="display: none;">
 			<h2>Create new supplier</h2>
 			<form id="supplier-form">
 				<label for="supplier_name">Supplier name</label>
