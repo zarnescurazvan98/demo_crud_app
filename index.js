@@ -146,7 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-function myFunction() {
+//Toggle Create new supplier btn//
+
+function toggleCreateSupplierBtn() {
 	var x = document.getElementById("show_container");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
