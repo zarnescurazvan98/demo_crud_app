@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Supplier CRUD</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<h2>Create new supplier</h2>
+			<form id="supplier-form">
+				<label for="supplier_name">Supplier name</label>
+				<input class="form-control form-control-sm" type="text" name="supplier_name" />
+				<label for="supplier_number">Supplier number</label>
+				<input class="form-control form-control-sm" type="number" name="supplier_number" />
+				<label for="country">Country</label>
+				<select class="form-control form-control-sm" id="country" name="country">
+					<option value="Romania">Romania</option>
+					<option value="Greece">Greece</option>
+					<option value="France">France</option>
+					<option value="Italy">Italy</option>
+					<option value="Croatia">Croatia</option>
+					<option value="Sweden">Sweden</option>
+					<option value="USA">USA</option>
+					<option value="Antigua & Barbuda">Antigua & Barbuda</option>
+					<option value="Argentina">Argentina</option>
+					<option value="Armenia">Armenia</option>
+					<option value="Switzerland">Switzerland</option>
+					<option value="Australia">Australia</option>
+					<option value="Austria">Austria</option>
+					<option value="New Zealand">New Zealand</option>
+					<option value="Bahamas">Bahamas</option>
+				</select>
+				<label for="city">City</label>
+				<input class="form-control form-control-sm" type="text" name="city" />
+				<label for="zip_code">Zip code</label>
+				<input class="form-control form-control-sm" type="text" pattern="[0-9]{6}" name="zip_code" />
+				<label for="address1">Address 1</label>
+				<input class="form-control form-control-sm" type="text" name="address1" />
+				<label for="address2">Address 2</label>
+				<input class="form-control form-control-sm" type="text" name="address2" />
+				<label for="iban">Iban</label>
+				<input class="form-control form-control-sm" type="number" name="iban" />
+				<label for="vat_amount">Vat amount</label>
+				<select class="form-control form-control-sm" id="vat_amount" name="vat_amount">
+					<option value="9%">9%</option>
+					<option value="16%">16%</option>
+					<option value="25%">25%</option>
+				</select>
+				<label for="currency">Currency</label>
+				<select class="form-control form-control-sm" id="currency" name="currency">
+					<option value="RON">RON</option>
+					<option value="SEK">SEK</option>
+					<option value="EUR">EUR</option>
+				</select>
+				<br>
+				<input class="btn btn-dark" type="submit" name="" />
+			</div>
+			</form>
+		</div>
+		<br>
+		<div class="container">
+			<div class="table table-striped table-bordered">
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Supplier name</th>
+							<th scope="col">Supplier number</th>
+							<th scope="col">Country</th>
+							<th scope="col">City</th>
+							<th scope="col">Zip code</th>
+						</tr>
+					</thead>
+					<tbody id="table"></tbody>
+				</table>
+			</div>
+
+			<div id="info"></div>
+
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

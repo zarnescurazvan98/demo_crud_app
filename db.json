@@ -1,0 +1,56 @@
+{
+  "suppliers": [
+    {
+      "name": "Ferrari",
+      "number": "16",
+      "country": "Italy",
+      "city": "Maranello",
+      "zip_code": "410531",
+      "address1": "Str. 1, Nr 2",
+      "address2": "",
+      "iban": "1223142141442",
+      "vat_amount": "25%",
+      "currency": "EUR",
+      "id": 1
+    },
+    {
+      "name": "Siemens",
+      "number": "21",
+      "country": "Romania",
+      "city": "Sibiu",
+      "zip_code": "550075",
+      "address1": "Str. 2, Nr. 3",
+      "address2": "",
+      "iban": "1244411",
+      "vat_amount": "25%",
+      "currency": "RON",
+      "id": 2
+    },
+    {
+      "name": "Microsoft",
+      "number": "56",
+      "country": "USA",
+      "city": "New York",
+      "zip_code": "445661",
+      "address1": "Str. 5, Nr. 6",
+      "address2": "",
+      "iban": "4214214",
+      "vat_amount": "9%",
+      "currency": "EUR",
+      "id": 3
+    },
+    {
+      "name": "Setly",
+      "number": "59",
+      "country": "Romania",
+      "city": "Sibiu",
+      "zip_code": "550065",
+      "address1": "Str. 12, Nr. 13",
+      "address2": "",
+      "iban": "133515351",
+      "vat_amount": "25%",
+      "currency": "RON",
+      "id": 4
+    }
+  ]
+}
